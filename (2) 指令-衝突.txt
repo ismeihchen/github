@@ -1,0 +1,45 @@
+
+git init
+
+git add a.txt
+
+git commit -m "add a.txt"
+
+-----------------
+
+衝突
+
+git checkout master
+
+vim a.txt
+
+git add a.txt
+
+git commit -m "edit a.txt in master"
+
+git checkout my-branch
+
+vim a.txt
+
+git add a.txt
+
+git commit -m "edit a.txt in my branch"
+
+git checkout master
+
+git merge --no-ff my-branch
+
+-- 解完衝突
+
+git add .
+
+git commit
+
+-- 解不了衝突
+
+git merge --abort 
+
+
+
+
+

@@ -1,0 +1,91 @@
+
+git init
+
+git add a.txt
+
+git commit -m "add a.txt"
+
+
+git status
+
+git add b.txt
+
+git commit -m "我是註解"
+
+---------------
+
+分支
+
+git branch my-branch
+
+git checkout my-branch
+
+-- 簡化 git checkout -b my-branch
+
+
+touch b.txt
+
+git add b.txt
+
+git commit -m "add b.txt" 
+
+---------------
+
+
+合併
+
+git checkout master
+
+git merge my-branch
+
+-- 把要合併東西併回來
+
+
+---------------
+
+git checkout my-branch
+
+git add e.txt
+
+git commit -m "add e"
+
+git checkout master
+
+git add f.txt
+
+git commit -m "add f"
+
+git merge my-branch
+
+---------------
+
+快轉
+
+git checkout my-branch
+
+git add g.txt
+
+git commit -m "add g"
+
+git merge my-branch
+
+
+---------------
+
+避免快轉
+
+git merge --no-ff my-branch
+
+---------------
+
+-- git reset 恢復檔案 至指定ID
+git reset --hard 63c96d6
+
+
+git reset --hard 0e80b88
+
+
+git commit -m "add g"
+
+
+

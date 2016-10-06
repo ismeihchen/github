@@ -1,0 +1,59 @@
+
+git init
+
+
+--要先 commit
+
+git add a.txt
+
+git commit -m "add a.txt"
+
+-------------------
+git remote add origin https://github.com/ismeihchen/gw.git
+
+git push -u origin master
+
+-- 下一次可以打 git push
+
+//輸入 git 帳密
+-------------------
+--遠端更新pull到本地端
+git fetch origin master
+
+git pull origin 
+-------------------
+git fetch -- 檢查是否有新東西
+
+git pull -- fetch + merge / fast-forward 未預期的事情會發生
+
+git push
+-------------------
+
+git rebase --onto 開頭片段(ex:7790ebb) 斷開位置(3dcd838)
+
+git rebase --onto 7790ebb 3dcd838
+-------------------
+
+rebase 接在遠端已更新東西上面
+避免不必要分支
+rebase接到最新地方
+
+rebase -- 解決衝突
+
+----------------------
+
+怎麼刪除本地 repo 已經加入過的 remote 設定
+
+-------------------
+怎麼把本地的 repo 的 develop 分支推送到叫做 github 的 remote 去？
+
+
+-------------------
+git remote -v
+
+-------------------
+//push 帳密
+
+
+ismeihchen
+ismeihchen@gmail.com

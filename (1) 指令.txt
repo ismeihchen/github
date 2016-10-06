@@ -1,0 +1,13 @@
+
+git init
+
+git add a.txt
+
+git commit -m "add a.txt"
+
+
+git status
+
+git add b.txt
+
+git commit -m "§Ú¬Oµù¸Ñ"
